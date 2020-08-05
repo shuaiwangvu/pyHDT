@@ -88,7 +88,7 @@ from hdt import HDTDocument
  # Load an HDT file.
  # Missing indexes are generated automatically, add False as the second argument to disable them
 document = HDTDocument("test.hdt")
-it = document.search_triple_bytes("", "", "")
+it = document.search_triples_bytes("", "", "")
 
 for s, p, o in it:
   print(s, p, o) # print b'...', b'...', b'...'
